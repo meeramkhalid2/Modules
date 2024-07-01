@@ -1,1 +1,20 @@
-<p>login works!</p>
+<!-- <h2>Login</h2> -->
+ 
+
+<!-- <img src="/login.jpg" alt="Error loading image"> -->
+<form  style="background-color: #f3f4d0;" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" [(ngModel)]="email" name="email" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" [(ngModel)]="password" name="password" required>
+  </div>
+  <button class= "buttonS" type="submit">Login</button>
+</form>
+<p></p>
+
+<button class="buttonS" (click)="navigateToUrl('register')" >Don't have an account? Sign Up</button>
+
+

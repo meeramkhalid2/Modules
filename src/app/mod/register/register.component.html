@@ -1,1 +1,21 @@
-<p>register works!</p>
+<!-- <h2>Register</h2> -->
+<!-- <body>
+    style="background-color: #e0e8f0;"
+</body> -->
+<form  style="background-color: #f3f4d0;" #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+    
+    <div>
+        <label for="name">Name:</label>
+        <input type="text"  [(ngModel)]="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email"  [(ngModel)]="email" name="email" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password"  [(ngModel)]="password" name="password" required>
+      </div>
+      <!-- <button type="submit">Register</button> -->
+      <button (click)="navigateToUrl('login')"  class="buttonS">Register</button>
+    </form>  
